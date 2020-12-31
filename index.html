@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Sunil Shastry">
+  <meta name="keywords" content="Norris Pollution - Home of Norris' Evergreen Jokes">
+  <meta name="description" content="Norris Pollution is a simple and fun web application that provides you with a range of humorous jokes about & made by Chuck Norris.">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+  <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#ff7052">
+  <link rel="shortcut icon" href="./assets/favicon/favicon.ico">
+  <meta name="msapplication-TileColor" content="#ff7052">
+  <meta name="msapplication-config" content="./assets/favicon/browserconfig.xml">
+  <meta name="theme-color" content="#ff7052">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script type="text/javascript" defer src="./js/script.js"></script>
+  <title>Norris Pollution</title>
+</head>
+<body>
+  <main class="main-content">
+    <section class="main__section-container">
+      <div>
+        <h2 class="section__header">Norris Pollution</h2>
+      </div>
+
+      <div class="category__section-container">
+        <label for="category">Choose category</label>
+        <select id="category" class="category__section">
+          <!-- Insert Categories through JavaScript -->
+        </select>
+      </div>
+      <button class="joke-btn" id="joke-btn">Fetch Joke</button>
+
+      <div class="joke-container" title="Copy Joke">
+        <span class="copy-text-title">Copy Joke</span>
+        <span class="quotes quote-left"><i class="fas fa-quote-left"></i></span>
+        <p class="joke-content" id="joke-content"></p>
+        <span class="quotes quote-right"><i class="fas fa-quote-right"></i></span>
+      </div>
+
+      <img src="./assets/chuck-title.png" title="Chuck Norris" alt="Chuck Norris" class="chuck__norris-pic">
+
+      <div class="social-container">
+        <a href="https://twitter.com/sunillshastry" target="_blank" title="Twitter" class="social-link">
+          <i class="fab fa-twitter"></i>
+        </a>
+  
+        <a href="https://www.instagram.com/sunillshastry/" target="_blank" title="Instagram" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+  
+        <a href="https://github.com/sunillshastry" target="_blank" title="GitHub" class="social-link">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+    </section>
+    <span class="joke-copy">Copied! <i class="fas fa-check"></i></span>
+
+    <div class="error-container">
+      <div class="error-popup">
+        <h2 class="error-header">
+          <span><i class="fas fa-exclamation-triangle"></i></span>
+          Error!
+        </h2>
+        <h3 class="error-subheader">There was a problem in fetching data, please refresh the browser and try again.</h3>
+        <button class="popup-close" id="popup-close"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
